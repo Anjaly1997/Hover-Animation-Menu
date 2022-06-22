@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0c152c;
+}
+
+.container{
+    display: flex;
+    width: 520px;
+    background:#ffffff10 ;
+    border-radius: 12px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+    height: 82px;
+    line-height: 92px;
+
+}
+.container .tab-menu{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+}
+.container .tab-menu li{
+    list-style: none;
+    flex: 1;
+    text-align: center;
+    font-size: 48px;
+}
+.container .tab-menu li a{
+   color: #5b58f9; 
+   transition: ease 0.2s;
+}
+
+.container .tab-menu li:first-child:hover{
+    background:#5b58f9 ;
+    border-radius: 12px 0px 0px 12px;
+    cursor: pointer;
+}
+.container .tab-menu li:nth-child(2):hover,
+.container .tab-menu li:nth-child(3):hover,
+.container .tab-menu li:nth-child(4):hover,
+.container .tab-menu li:nth-child(5):hover
+
+{
+    background:#5b58f9 ;
+    border-radius: 0px;
+    cursor: pointer;
+}
+.container .tab-menu li:last-child:hover{
+    background:#5b58f9 ;
+    border-radius: 0px 12px 12px 0px;
+    cursor: pointer;
+}
+.container .tab-menu li:first-child:hover a,
+.container .tab-menu li:nth-child(2):hover a,
+.container .tab-menu li:nth-child(3):hover a,
+.container .tab-menu li:nth-child(4):hover a,
+.container .tab-menu li:nth-child(5):hover a,
+.container .tab-menu li:nth-child(6):hover a
+{
+    color:#fff;
+}
